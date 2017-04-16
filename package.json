@@ -5,6 +5,8 @@
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
+    "react-addons-transition-group": "^15.5.2",
     "react-dom": "^15.5.4",
     "reactstrap": "^4.5.0",
     "shuffle-array": "^1.0.1"
