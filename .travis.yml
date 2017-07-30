@@ -12,7 +12,9 @@ deploy:
   access_key_id: AKIAJWCD22OJHLYTH23Q
   secret_access_key:
     secure: eNpovgaH6VfNZl6OEaYC1EZsccaNqTA/9Q//wxYSZsHGu0mbv4OTHwZN/vFYTjETMPLIgSioc5tYoyu5lYhToFZd15YNLglGlZDWJU3WsfjRRNDMBQOIqyfZZbOt3INBcQjoqHzL69XDBovv+Zg6VuyXoLpe4SLC8gl1ja9hzYaxArqx1zt1IFYpcYo9id3byHhSk904vQ0lrngaSk8655cycKujEnr4UMNff/NuD23++0K+POaoc9K4ilpznQ82LSvwpzNg0VJ3KOLxVv0o1S3pFP+L1xfTxuRa7YMNfWCxIMq7hAVwypzG50kVQB8x3ihGaBe2KfNvmbHVreE8BxaUIRxo+UwGm4pBNjzvfTqDT9W2qMJufIX6FlOMn6kSTQB0gc3GDrWKIbqXdvQYO4Z2eMMyvuTdmwdYq/OIzUjeUbKSKiZ6FNi8jV6Kzn8C9oxUANMyqMIu/hxw1OXZEJehOMnr0SMPv+EgQYpEVMkk4sh5tPCx1Dj5aLDUmmNO4PI2TEXFWUNnhMemGnDRnvJlCrn2hS1iH0PkDnzwbldsDQupPpJA7piXpUs8P+WcnoRDriZRh21V+/F4wlLnInlWTp3QKLewCGxhmyBSAqI1pv04QPkp6Qm8XXMfXC4zkgl42bk/FyQahY+AiOC7krEximbywetg8P5LG7PV/AI=
-  bucket: celebrity-hospital.com.s3-website-us-west-2.amazonaws.com
+  bucket: celebrity-hospital.com
   acl: private
+  skip_cleanup: true
+  region: us-west-2
   on:
     repo: leggomuhgreggo/celeb
