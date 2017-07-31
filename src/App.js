@@ -3,8 +3,15 @@ import Header from "./components/Header/Header";
 import SiteWrap from "./components/SiteWrap/SiteWrap";
 import Container from "./components/Container/Container";
 import Row from "./components/Row/Row";
-import { Button } from "react-native";
+import { Button, View } from "react-native";
+import styled from "styled-components";
 import DrawDeck from "./deck.js";
+
+const Pair = styled(View)`
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+`;
 
 class App extends Component {
   constructor() {
@@ -34,7 +41,9 @@ class App extends Component {
         <Header />
         <Container>
           <Row>
-            {this.state.celeb} with {this.state.disease}
+            <Pair>
+              {this.state.celeb} with {this.state.disease}
+            </Pair>
           </Row>
 
           <Row>
