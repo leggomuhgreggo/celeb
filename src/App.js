@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Header from "./components/Header/Header";
-import { Button, View } from "react-native";
+import SiteWrap from "./components/SiteWrap/SiteWrap";
+import Container from "./components/Container/Container";
+import Row from "./components/Row/Row";
+import { Button } from "react-native";
 import DrawDeck from "./deck.js";
 
 class App extends Component {
@@ -27,31 +30,22 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <SiteWrap>
         <Header />
-        <View>
-          {this.state.celeb} with {this.state.disease}
-        </View>
-        <Button
-          onPress={this.draw.bind(this)}
-          title="Pair"
-          accessibilityLabel="Click to pair celebrity with disease"
-        />
-        {/*
+        <Container>
           <Row>
-            <Col>
-              <div className="pairing">
-                {this.state.celeb} with {this.state.disease}
-              </div>
-            </Col>
+            {this.state.celeb} with {this.state.disease}
           </Row>
+
           <Row>
-            <Col>
-              <div className="draw-button">
-              </div>
-            </Col>
-          </Row>*/}
-      </div>
+            <Button
+              onPress={this.draw.bind(this)}
+              title="Pair"
+              accessibilityLabel="Click to pair celebrity with disease"
+            />
+          </Row>
+        </Container>
+      </SiteWrap>
     );
   }
 }
