@@ -1,8 +1,6 @@
-import { View } from "react-native";
-import styled from "styled-components";
+import styled from "styled-components/native";
 
-const SiteWrap = styled(View)`
-  color: #222222;
+const SiteWrap = styled.View`
   background: #effaff;
   height: 100vh;
   width: 100%;

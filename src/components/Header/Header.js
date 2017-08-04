@@ -1,19 +1,19 @@
 import React from "react";
-import { Image, Text, View } from "react-native";
-import styled from "styled-components";
+import { Image } from "react-native";
+import styled from "styled-components/native";
 
-const SiteTitle = styled(Text)`
+const SiteTitle = styled.Text`
   font-size: 2.3rem;
   color: #444;
   margin-top: .5rem;
 `;
 
-const HeaderWrap = styled(View)`
+const HeaderWrap = styled.View`
+  padding: 30px;
   background: rgb(220, 245, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem;
 `;
 
 const Header = () =>

@@ -1,14 +1,13 @@
 import React, { Component } from "react";
+import DrawDeck from "./deck.js";
+import styled from "styled-components/native";
 import Header from "./components/Header/Header";
 import SiteWrap from "./components/SiteWrap/SiteWrap";
 import Container from "./components/Container/Container";
 import Row from "./components/Row/Row";
-import { Button, View } from "react-native";
-import styled from "styled-components";
-import DrawDeck from "./deck.js";
+import { Button } from "react-native";
 
-const Pair = styled(View)`
-  font-size: 1.3rem;
+const Pair = styled.View`
   margin-top: 1rem;
   margin-bottom: 1rem;
 `;
